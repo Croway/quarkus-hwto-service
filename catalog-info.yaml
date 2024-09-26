@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "hwto"
+  description: "My App"
+  tags:
+    - java
+  links:
+    - url: https://devspaces.apps.cluster-example.com/#https://github.com/croway/quarkus-hwto-service?storageType=per-workspace
+      title: Open in OpenShift Dev Spaces
+      icon: web
+  annotations:
+    github.com/project-slug: "croway/quarkus-hwto-service"
+    backstage.io/kubernetes-id: "hwto"
+    backstage.io/kubernetes-label-selector: "system=quarkus"
+    janus-idp.io/tekton : "hwto-service"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/backstage-admins"
+  system: system:default/quarkus
+  providesApis: 
+    - quarkus-final
