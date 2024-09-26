@@ -90,6 +90,17 @@
             <artifactId>camel-quarkus-jsonpath</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-management</artifactId>
+          </dependency>
+          <!--
+            This dependency is required for viewing Camel routes source XML.
+          -->
+          <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-jaxb</artifactId>
+          </dependency>
         <!-- Test -->
         <dependency>
             <groupId>io.quarkus</groupId>

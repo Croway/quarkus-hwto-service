@@ -1,0 +1,10 @@
+- route:
+    id: route-3667
+    from:
+      id: from-2743
+      uri: direct:test
+      parameters: {}
+      steps:
+        - log:
+            id: log-3904
+            message: ${body}
